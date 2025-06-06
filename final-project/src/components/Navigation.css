@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.navbar {
+  background: radial-gradient(circle, maroon 0%, black 100%);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img{
+  margin-left: 40px;
+}
+
+#ubat {
+  color: gray;
+}
+
+.logo-crossfade-wrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+  
+.crossfade-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+  
+.crossfade-logo.visible {
+  opacity: 1;
+}
+
+.brand-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+  
+.hollow-text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(233, 226, 226);
+  text-stroke: 1px white;
+}
+
+.animation-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navigation {
+  position: relative;
+  width: 400px;
+  height: 80px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  z-index: l;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 85px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 2em;
+}
+
+.navigation ul li.active a .icon{
+  font-size: 1.5em;
+  transform: translateY(-8px);
+
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  font-size: 0.8em;
+  bottom: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.25s;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+}
+
+.navigation ul li.active a .text {
+  transform: scale(1);
+
+}
+  
+.navigation ul .indicator {
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: rgb(233, 226, 226);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+

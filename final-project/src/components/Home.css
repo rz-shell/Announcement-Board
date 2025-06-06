@@ -1,0 +1,47 @@
+html, body, #root, #body {
+  height: 100%;
+  margin: 0;
+}
+
+#body {
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+#body > * {
+  max-width: 600px;
+  width: 100%;
+}
+
+#head-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bolder;
+}
+
+#post-button {
+  background: radial-gradient(circle, maroon 0%, black 100%);
+  font-weight: bolder;
+}
+
+.announcement-image {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.25rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+#delete-btn {
+  background: radial-gradient(circle, maroon 0%, black 100%);
+}
+
+
